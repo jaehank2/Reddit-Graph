@@ -1,8 +1,8 @@
-<h1 align="center"> CS225 Final Project </h1>
+<h1 align="center"> Graph Mining Subreddits </h1>
 <h2 align="center"> Yash Gupta | John Kim | Adish Patil | Mike Lee </h2>
 
 ## Summary ##
-Our final project uses the [Stanford Reddit Hyperlink Network dataset](http://snap.stanford.edu/data/soc-RedditHyperlinks.html) to provide intresting insights about interactions and conflicts between communities called subreddits on the popular website [Reddit](https://www.reddit.com).
+This project uses the [Stanford Reddit Hyperlink Network dataset](http://snap.stanford.edu/data/soc-RedditHyperlinks.html) to provide intresting insights about interactions and conflicts between communities called subreddits on the popular website [Reddit](https://www.reddit.com).
 
 ## Data Cleaning ##
 The raw data is in a TSV (Tab Seperated Values) format where each line represents a link (see example below). To format this data to our desired format we used python scripts that can be found in the [Python Files](https://github-dev.cs.illinois.edu/cs225-fa20/yashg3-adish2-jaehank2-dcl3/tree/master/Python%20Files) folder.
@@ -61,17 +61,17 @@ Source Subreddit | Target Subreddit | Sentiment | Count
   * Usage - `./FullTraversal [filepath]`.
   * Example - `./FullTraversal data/connected.csv`.
   * :warning: ***This executable sets the stack size to unlimited in order to avoid stack overflow with large datasets.*** :warning:
-### For TAs ###
+### For Users/Testers ###
 * Test
-  * Allows TAs to run our unit tests.
+  * Allows Users/Testers to run our unit tests.
   * 25 test cases with 144 assertions written using 5 [custom testing datasets](https://github-dev.cs.illinois.edu/cs225-fa20/yashg3-adish2-jaehank2-dcl3/tree/master/tests) of varying sizes.
   * Compiles [tests.cpp](https://github-dev.cs.illinois.edu/cs225-fa20/yashg3-adish2-jaehank2-dcl3/blob/master/tests/tests.cpp) using `make Test`
   * Usage:
     * Test all - `./Test`
     * Test one function from [constructor, BFS, IDS, Tarjan, Kosaraju, DFSTraversal] - `./Test [function]`
   * Example - `./Test [DFSTraversal]`
-* TA
-  * Sandbox for TAs to write their own function calls for grading.
+* Users
+  * Sandbox for Users to write their own function calls for testing.
   * Compiles [datasetTesting.cpp](https://github-dev.cs.illinois.edu/cs225-fa20/yashg3-adish2-jaehank2-dcl3/blob/master/datasetTesting.cpp) using `make TA`.
   * Usage - `./TA`
   * :warning: ***This executable sets the stack size to unlimited in order to avoid stack overflow with large datasets.*** :warning:
